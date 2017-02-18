@@ -45,7 +45,7 @@ open class BackgroundQueue {
     }
     
     @discardableResult
-    func pause(for seconds : Int) -> BackgroundQueue {
+    public func pause(for seconds : Int) -> BackgroundQueue {
         self.append {
             sleep(UInt32(seconds))
         }
