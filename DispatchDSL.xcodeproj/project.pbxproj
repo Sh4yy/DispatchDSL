@@ -10,6 +10,7 @@
 		E40089A41E58C6FC00C39C6D /* DispatchDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E400899A1E58C6FC00C39C6D /* DispatchDSL.framework */; };
 		E40089A91E58C6FC00C39C6D /* DispatchDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40089A81E58C6FC00C39C6D /* DispatchDSLTests.swift */; };
 		E40089AB1E58C6FC00C39C6D /* DispatchDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E400899D1E58C6FC00C39C6D /* DispatchDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40089B51E58C77200C39C6D /* DispatchDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40089B41E58C77200C39C6D /* DispatchDSL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E40089A31E58C6FC00C39C6D /* DispatchDSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchDSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40089A81E58C6FC00C39C6D /* DispatchDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchDSLTests.swift; sourceTree = "<group>"; };
 		E40089AA1E58C6FC00C39C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E40089B41E58C77200C39C6D /* DispatchDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchDSL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				E400899D1E58C6FC00C39C6D /* DispatchDSL.h */,
 				E400899E1E58C6FC00C39C6D /* Info.plist */,
+				E40089B41E58C77200C39C6D /* DispatchDSL.swift */,
 			);
 			path = DispatchDSL;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					E40089991E58C6FC00C39C6D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7887XB8C25;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E40089A21E58C6FC00C39C6D = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40089B51E58C77200C39C6D /* DispatchDSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		E40089AF1E58C6FC00C39C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7887XB8C25;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Shayy.DispatchDSL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		E40089B01E58C6FC00C39C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7887XB8C25;
@@ -360,6 +368,7 @@
 		E40089B21E58C6FC00C39C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7887XB8C25;
 				INFOPLIST_FILE = DispatchDSLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		E40089B31E58C6FC00C39C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7887XB8C25;
 				INFOPLIST_FILE = DispatchDSLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
